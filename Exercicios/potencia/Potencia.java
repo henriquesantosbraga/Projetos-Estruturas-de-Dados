@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+public class Potencia {
+
+
+    public static int potenciacao(int base, int expoente) {
+        if (expoente == 0) {
+            return 1;
+        }
+        return base * potenciacao(base, expoente - 1);
+    }
+
+    public static void main(String[] args) {
+
+        int base = Integer.parseInt(JOptionPane.showInputDialog("Digite a base:"));
+        int expoente = Integer.parseInt(JOptionPane.showInputDialog("Digite o expoente:"));
+        int resultado = potenciacao(base, expoente);
+        JOptionPane.showMessageDialog(null, "Resultado de " + base + "^" + expoente + " = " + resultado);
+    }
+}

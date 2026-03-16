@@ -1,0 +1,7 @@
+import javax.swing.JOptionPane;
+
+public class stackOverflow {
+	stack Stack = new stack();
+	
+	
+}
